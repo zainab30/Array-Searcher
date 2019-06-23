@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+var arr = [1, 4, 10, 15, 50, 100];
+
+function seachArray(num1, num2){
+
+var display = "Not Found!!";
+
+for(var i = 0 ; i < arr.length ; i++){
+   
+   if (num1 == arr[i]){
+       if(display == "Not Found!!"){
+          display = num1 + " Found!!";
+       }
+   else {
+       display = "Both Found!!";
+   }
+   }
+   if (num2 == arr[i]){
+       if(display == "Not Found!!"){
+          display = num2 + " Found!!";
+       }
+   else {
+       display = "Both Found!!";
+   }
+  }
+ }   
+ console.log(display);
+}
+seachArray(10, 50);
+seachArray(11, 50);
+seachArray(100, 5);
+seachArray(12, 61);
+
+
+</script>
+</html>
